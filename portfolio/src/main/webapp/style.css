@@ -7,3 +7,12 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+/*trying out some css */
+h1 {
+    color: rgb(126, 15, 15);
+    
+    font-size: 70px; 
+
+    text-decoration: underline double;
+}
