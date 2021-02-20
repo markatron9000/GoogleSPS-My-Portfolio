@@ -18,7 +18,8 @@ h1 {
 }
 
 body{ 
-    background-color: rgba(218, 112, 214, 0.116);
+    /*background-color: rgba(218, 112, 214, 0.116);*/
+    background-image: linear-gradient(rgba(255, 0, 242, 0.068), rgba(14, 255, 143, 0.089));
 }
 
 .firstbuttonclass{
