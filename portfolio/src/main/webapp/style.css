@@ -28,3 +28,13 @@ body{
     cursor:pointer;
     font-size: medium;
 }
+
+.buttonAppear{
+    appearance: button;
+    text-align: center;
+    cursor:pointer;
+    font-size: medium;
+}
+
+/* now I will start doing the game's css on another file */
+

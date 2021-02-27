@@ -1,0 +1,78 @@
+#game{
+    width: 1000px;
+    height:450px;
+    border-radius: 25px;
+    border: 2px double black;
+    margin:auto;
+    top:30px;
+    background-image: url("/images/cyberpunk-street-resize.png");
+    /*overflow:hidden;*/ 
+}
+
+#character{
+    width:60px;
+    height:300px;
+    background-color: tomato;
+    position:relative;
+    top:150px;
+    left:40px;
+}
+
+#toprock{
+    height:60px;
+    width:60px;
+    border-radius: 50%;  
+    background-color:burlywood;
+    position:relative;
+    top:-180px;
+    left:50px;
+    animation: toprock 0.8s linear infinte;
+}
+
+#topbox{
+    height:80px;
+    width:80px;
+    background-color:yellow;
+    position:absolute;
+
+    top:0px;
+    left:50px;
+}
+
+#bottomrock{
+    height:60px;
+    width:60px;
+    border-radius: 50%;  
+    background-color:burlywood;
+    position:absolute;
+    top:-180px;
+    left:50px;
+    animation: bottomrock 0.8s linear infinite;
+}
+
+
+#bottombox{
+    height:80px;
+    width:80px;
+    background-color:yellow;
+    position:absolute;
+    top:0px;
+    left:50px;
+}
+
+@keyframes toprock{
+    0%{left:990px};
+    100%{left:-60px};
+}
+
+@keyframes bottomrock{
+    0%{left:990px};
+    100%{left:-60px};
+}
+
+.buttonclass{
+    background-color: palegoldenrod;
+    text-align: center;
+    cursor:pointer;
+    font-size: medium;
+}
