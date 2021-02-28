@@ -15,6 +15,10 @@ h1 {
     font-size: 70px; 
 
     text-decoration: underline double;
+
+    font-stretch: semi-condensed;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{ 
@@ -34,6 +38,32 @@ body{
     text-align: center;
     cursor:pointer;
     font-size: medium;
+}
+
+.forward{
+    background-color: lavenderblush;
+    text-align: center;
+    cursor:pointer;
+    font-size: large;
+}
+
+.backward{
+    background-color:lavenderblush;
+    text-align: center;
+    cursor:pointer;
+    font-size: large;
+}
+.languagesClass{
+    position: absolute;
+    bottom: 15px;
+}
+#projectBox{
+    border: 2px double black;
+    width: 650px;
+    height: 250px;
+    border-radius: 25px;
+    margin:auto;
+    background-color: rgba(224, 255, 255, 0.274);
 }
 
 /* now I will start doing the game's css on another file */

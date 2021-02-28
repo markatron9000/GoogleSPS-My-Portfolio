@@ -12,6 +12,53 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+var projectBoxCounter = 0;
+function nextProj() {
+  var heady = document.getElementById("headerProj");
+  var bodee = document.getElementById("bodyProj");
+  var dude = document.getElementById("comeOn");
+  projectBoxCounter += 1;
+  if (projectBoxCounter > 3) {
+    projectBoxCounter = 0;
+  } 
+
+  if(projectBoxCounter == 0){
+      heady.innerHTML = "Super Smash Bros Ultimate Optimizer";
+      dude.innerHTML = "Languages used: Java, XML";
+      bodee.innerHTML = 'For my second hackathon, I worked solo, and created an android app that, when told what character your opponent will be playing, tells you the best and worst matchups to counter it! Never pick the wrong character again! It was a little unpolished, but for only having 24 hours, I was very proud of it.  Due to the time constraint, I was unable to type all of the matchup lists into the respective character pages. I did get a decent amount of them finished though. Primarily made with Java and XML in Android Studio. Check out the repository <a href="https://github.com/markatron9000/SuperSmashBrosUltimateMatchupOptimizer">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=hdPSS6P1sLc">here</a></p>' 
+      ;
+      
+    }
+  else if(projectBoxCounter == 1){
+      heady.innerHTML = "The Secret Identity Machine";
+      dude.innerHTML = "Languages used: Python (with Flask library), HTML, CSS";
+      bodee.innerHTML = 'My team and I created this project for our very first hackathon! It was a website which gave you the information for as many spoofed profiles as you wished to create. It gave fake addresses, fake images of people, phone numbers, fake names, and even gave each profile an email address that would automatcially recieve the "confirm profile" email - no need to set up an email for each account! It followed on the theme for the hackathon, "spy", as spies need to use fake identies all the time! Made with Python (with Flask library), html, and css. The website is not deployed anymore, but check out the repository <a href="https://github.com/robmadriaga/Extra_Secret">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=ttl-DLS5YmQ">here</a>'
+      ;
+      
+    }
+  else if(projectBoxCounter == 2){
+      heady.innerHTML = "Anime Openings & Endings Downloader";
+      dude.innerHTML = "Languages used: Python";
+      bodee.innerHTML = 'This one is still a work in progress, but essentially, it is a program which takes in the user\'s MyAnimeList username, scrapes their list of completed anime from their online page, keeps only those above a specified star limit, searches for a youtube video of the openings and endigns of that anime, and then returns to the user a zip file containing all the videos. I have gotten all the parts except navigating through youtube with python - it can be a little tricky! Watch for new updates. Made entirely with Python. Check out the repository <a href="https://github.com/markatron9000/AnimeOpsEnds">here</a>' 
+      ;
+      
+    }
+  else if(projectBoxCounter == 3){
+      heady.innerHTML = "Upcoming project: AI4All Portfolio";
+      dude.innerHTML = "Languages used: Python (with Scikit-learn, Pandas, Numpy), ???";
+      bodee.innerHTML = 'This semester, I am taking part in the AI4All program in addition to Google SPS and my regular classes. I will be desiging something that uses AI, but I have not quite gotten there yet! But in a few weeks, I will post the repository here.';
+      
+    }
+}
+
+function prevProj(){
+    projectBoxCounter-=2;
+    if(projectBoxCounter== -2){
+        projectBoxCounter=2;
+    }
+    nextProj();
+}
+
 
 function addRandomQuote() {
   const greetings =
