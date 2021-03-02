@@ -6,7 +6,7 @@
     margin:auto;
     top:30px;
     background-image: url("/images/cyberpunk-street-resize.png");
-    /*overflow:hidden;*/ 
+    overflow:hidden; 
 }
 
 #character{
