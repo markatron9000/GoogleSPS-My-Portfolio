@@ -67,5 +67,15 @@ body{
     position:relative;
 }
 
+CC {
+  animation: colorrotation 2s infinite;
+}
+
+@keyframes colorrotation {
+  0% { color: rgba(224, 255, 255); }
+  50% { color: rgba(255, 0, 242); }
+  100% { color: rgb(0, 0, 0); }
+}
+
 /* now I will start doing the game's css on another file */
 
