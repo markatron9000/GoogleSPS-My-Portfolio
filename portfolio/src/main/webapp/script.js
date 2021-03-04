@@ -22,14 +22,14 @@ function nextProj() {
     projectBoxCounter = 0;
   } 
 
-  if(projectBoxCounter == 0){
+  if(projectBoxCounter == 1){
       heady.innerHTML = "Super Smash Bros Ultimate Optimizer";
       dude.innerHTML = "Languages used: Java, XML";
       bodee.innerHTML = 'For my second hackathon, I worked solo, and created an android app that, when told what character your opponent will be playing, tells you the best and worst matchups to counter it! Never pick the wrong character again! It was a little unpolished, but for only having 24 hours, I was very proud of it.  Due to the time constraint, I was unable to type all of the matchup lists into the respective character pages. I did get a decent amount of them finished though. Primarily made with Java and XML in Android Studio. Check out the repository <a href="https://github.com/markatron9000/SuperSmashBrosUltimateMatchupOptimizer">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=hdPSS6P1sLc">here</a></p>' 
       ;
       
     }
-  else if(projectBoxCounter == 1){
+  else if(projectBoxCounter == 0){
       heady.innerHTML = "The Secret Identity Machine";
       dude.innerHTML = "Languages used: Python (with Flask library), HTML, CSS";
       bodee.innerHTML = 'My team and I created this project for our very first hackathon! It was a website which gave you the information for as many spoofed profiles as you wished to create. It gave fake addresses, fake images of people, phone numbers, fake names, and even gave each profile an email address that would automatcially recieve the "confirm profile" email - no need to set up an email for each account! It followed on the theme for the hackathon, "spy", as spies need to use fake identies all the time! Made with Python (with Flask library), html, and css. The website is not deployed anymore, but check out the repository <a href="https://github.com/robmadriaga/Extra_Secret">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=ttl-DLS5YmQ">here</a>'

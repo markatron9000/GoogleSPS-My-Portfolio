@@ -25,4 +25,12 @@ static ArrayList<String> messages =  new ArrayList<String>();
     //response.getWriter().println(messages);
     messages.add(textValue);
     }
+
+/*
+    @Override
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+     response.setContentType("text/html;charset=UTF-8");
+     System.out.println("<html><body onload=\"alert('Hello World')\"></body></html>");
+    }
+*/
 }

@@ -21,6 +21,6 @@ async function getListOfQuotes(){
   greetingContainer.innerText = quote;
 }
 
-function thanksAlert(){
+async function thanksAlert(){
  alert("Thank you for your message!")
 }
