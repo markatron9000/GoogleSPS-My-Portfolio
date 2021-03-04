@@ -19,6 +19,26 @@ h1 {
     font-stretch: semi-condensed;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    animation: colorrotationtitle 10s infinite, titleanimation 28s;
+
+}
+@keyframes colorrotationtitle {
+  0% { color:  rgb(211, 26, 26); }
+  50% { color: black; }
+  100% { color:  rgb(211, 26, 26); }
+}
+
+@keyframes intrance{
+    0%{right: 650px;}
+    100%{right: 0px;}
+}
+@keyframes titleAnimation{
+  0% { font-family: Arial, Helvetica, sans-serif; }
+  25% {font-family: fantasy;}
+  50% { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  75% {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  100% { font-family: cursive; }
 }
 
 body{ 
@@ -72,7 +92,7 @@ CC {
 }
 
 @keyframes colorrotation {
-  0% { color: rgba(224, 255, 255); }
+  0% { color: yellowgreen; }
   50% { color: rgba(255, 0, 242); }
   100% { color: rgb(0, 0, 0); }
 }
