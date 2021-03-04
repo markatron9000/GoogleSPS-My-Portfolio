@@ -20,13 +20,13 @@ h1 {
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    animation: colorrotationtitle 10s infinite, titleanimation 28s;
+    animation: colorrotationtitle 12s infinite, titleanimation 28s infinite;
 
 }
 @keyframes colorrotationtitle {
-  0% { color:  rgb(211, 26, 26); }
+  0% { color:  rgb(184, 25, 25); }
   50% { color: black; }
-  100% { color:  rgb(211, 26, 26); }
+  100% { color:  rgb(184, 25, 25); }
 }
 
 @keyframes intrance{

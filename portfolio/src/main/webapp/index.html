@@ -62,9 +62,19 @@
       <p></p>      
       <a href="/Documents/throwawayresume2.pdf">If you would like a pdf of my resume, just click here!</a>
       <p></p>
-
+        <br/>
       <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       -->
+
+    <form action="/form-handler" method="POST">
+    <p>Have feedback on the website? Need to vent about your day? Want to give me your contact info? Whatever it may be, just enter it below and I will read it!</p>
+    <textarea name="text-input"></textarea>
+    <br/>
+    <br/>
+    <input type="submit" onclick="thanksAlert()"/>
+    </form>
+
+      <hr>
         <h2>Click here to get a random tidbit:</h2>
       <button class = "firstbuttonclass" onclick="getListOfQuotes()">Quote Me</button>
       <div id="greeting-container"></div>

@@ -20,3 +20,7 @@ async function getListOfQuotes(){
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = quote;
 }
+
+function thanksAlert(){
+ alert("Thank you for your message!")
+}
