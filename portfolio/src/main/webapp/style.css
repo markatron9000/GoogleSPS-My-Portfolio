@@ -11,7 +11,7 @@
 /*trying out some css */
 h1 {
     color: rgb(126, 15, 15);
-    
+    position:relative;
     font-size: 70px; 
 
     text-decoration: underline double;
@@ -20,13 +20,34 @@ h1 {
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    animation: colorrotationtitle 12s infinite, titleanimation 28s infinite;
+    animation: intrance 0.5s linear, colorrotationtitle 60s infinite;
+    /*colorrotationtitle 35s infinite, intrance 0.4s linear, titleAnimation 70s infinite*/
+
 
 }
+@keyframes yeet{
+    0% {color: rgba(126, 15, 15, 0);}
+    50%{color: rgba(126, 15, 15, 0.5);}
+    100% {color: rgba(126, 15, 15)}
+}
 @keyframes colorrotationtitle {
-  0% { color:  rgb(184, 25, 25); }
-  50% { color: black; }
-  100% { color:  rgb(184, 25, 25); }
+ /* 0% { color:  rgb(0, 0, 0); }
+  25% { color:  rgb(136, 40, 76); }
+  50% { color: rgb(11, 47, 102) }
+  75% { color:  rgb(187, 150, 14)	; }
+  90% { color:  rgb(125, 150, 56); }
+  100% {color: black;}
+  */
+  /*
+  0%{color: rgba(126, 15, 15, 0);}
+  5%{color: rgba(126, 15, 15);}
+  70% { color: yellowgreen; }
+  80% { color: rgba(255, 0, 242); }
+  100% { color: rgb(0, 0, 0); }
+  */
+  0%{color: rgba(126, 15, 15);}
+  50%{color: rgba(0,0,0);}
+  100%{color: rgba(126,15,15);}
 }
 
 @keyframes intrance{
@@ -34,16 +55,16 @@ h1 {
     100%{right: 0px;}
 }
 @keyframes titleAnimation{
-  0% { font-family: Arial, Helvetica, sans-serif; }
-  25% {font-family: fantasy;}
-  50% { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  0% { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  60% { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
   75% {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
   100% { font-family: cursive; }
 }
 
 body{ 
     /*background-color: rgba(218, 112, 214, 0.116);*/
-    background-image: linear-gradient(rgba(255, 0, 242, 0.068), rgba(14, 255, 143, 0.089));
+    background-image: linear-gradient(rgba(255, 0, 242, 0.055), rgba(14, 255, 143, 0.089));
+    /*  */
 }
 
 .firstbuttonclass{

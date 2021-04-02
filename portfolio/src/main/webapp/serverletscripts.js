@@ -21,6 +21,23 @@ async function getListOfQuotes(){
   greetingContainer.innerText = quote;
 }
 
+async function getTableOfMusic(){
+  const responseFromServer = await fetch('/buildtable');
+
+  const songList = await responseFromServer.json();
+  
+   var table = "<table>";
+   var n=0;
+   while(typeof songList[n] != 'undefined') { 
+    table=table+"<entry>"+songList[n]+"</entry>" + "<entry><a href=\"https://www.youtube.com/results?search_query=" + songList[n].split(' ').join('_') + "\">Link to song</a></entry></br>"; 
+    } 
+  
+  table = table + "</table>";
+  
+  const songsContainer = document.getElementById('tabl');
+  songsContainer.innerHTML = table;
+}
+
 async function thanksAlert(){
  alert("Thank you for your message!")
 }
