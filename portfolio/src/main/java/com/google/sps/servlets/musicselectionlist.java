@@ -43,8 +43,8 @@ public class musicselectionlist extends HttpServlet {
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Bask");
     FullEntity taskEntity =
         Entity.newBuilder(keyFactory.newKey())
-            .set("Music Selection", textValue)
-            .set("Timestamp For Music", timeSubmitted)
+            .set("MusicSelection", textValue)
+            .set("TimestampForMusic", timeSubmitted)
             .build();
     datastore.put(taskEntity);
     //messages.add(textValue);

@@ -1,4 +1,8 @@
-
+body{ 
+    /*background-color: rgba(218, 112, 214, 0.116);*/
+    background-color:rgba(255, 0, 0, 0.158);
+    /*  */
+}
 #musicinput{
     width: 1100px;
     height: 150px;
@@ -6,8 +10,10 @@
     border: 2px double rgb(94, 89, 89);
     margin:auto;
     top:30px;
-    background-image: url("/images/air___avatar_the_last_airbender_by_naomivandoren_de22kdt-fullview.jpg");
-    overflow:hidden; 
+    /*background-image: url("/images/air___avatar_the_last_airbender_by_naomivandoren_de22kdt-fullview.jpg");
+    */
+    background-color: rgba(0, 26, 255, 0.089);
+    overflow: hidden; 
 }
 
 #table {

@@ -26,11 +26,12 @@ async function getTableOfMusic(){
 
   const songList = await responseFromServer.json();
   
-   var table = "<table>";
+   var table = "<br><table>";
    var n=0;
    while(typeof songList[n] != 'undefined') { 
-    table=table+"<entry>"+songList[n]+"</entry>" + "<entry><a href=\"https://www.youtube.com/results?search_query=" + songList[n].split(' ').join('_') + "\">Link to song</a></entry></br>"; 
-    } 
+    table=table+"<entry>    " + songList[n]+"    ||    </entry>" + "<entry><a href=\"https://www.youtube.com/results?search_query=" + songList[n].split(' ').join('_') + "\">Link to song</a></entry></br>"; 
+    n++
+   } 
   
   table = table + "</table>";
   
