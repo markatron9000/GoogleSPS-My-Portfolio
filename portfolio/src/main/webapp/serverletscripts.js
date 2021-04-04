@@ -26,7 +26,7 @@ async function getTableOfMusic(){
 
   const songList = await responseFromServer.json();
   
-   var table = "<br><table>";
+   var table = "<br><table><u><b>The Great Slate of Songs</b></u><br>";
    var n=0;
    while(typeof songList[n] != 'undefined') { 
     table=table+"<entry>    " + songList[n]+"    ||    </entry>" + "<entry><a href=\"https://www.youtube.com/results?search_query=" + songList[n].split(' ').join('+') + "\">Link to song</a></entry></br>"; 
