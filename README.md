@@ -1,4 +1,5 @@
-#Mark Raymond Matis, Texas A&M
+## Mark Raymond Matis, Texas A&M University<br/>
 This repo contains Mark Matis's portfolio and SPS projects.
 To see the portfolio website I built, click here! https://mmatis-sps-spring21.appspot.com/
-We also have another, really cool website coming soon, that is a collaboration of team 21 - stay tuned ;)
+I am also a member of Team 21, and we have another, really cool website at https://www.letsmeet.page/
+Thanks for visiting ;)
