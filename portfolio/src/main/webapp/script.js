@@ -18,7 +18,7 @@ function nextProj() {
   var bodee = document.getElementById("bodyProj");
   var dude = document.getElementById("comeOn");
   projectBoxCounter += 1;
-  if (projectBoxCounter > 3) {
+  if (projectBoxCounter > 7) {
     projectBoxCounter = 0;
   } 
 
@@ -39,14 +39,38 @@ function nextProj() {
   else if(projectBoxCounter == 2){
       heady.innerHTML = "Anime Openings & Endings Downloader";
       dude.innerHTML = "Languages used: Python";
-      bodee.innerHTML = 'This one is still a work in progress, but essentially, it is a program which takes in the user\'s MyAnimeList username, scrapes their list of completed anime from their online page, keeps only those above a specified star limit, searches for a youtube video of the openings and endigns of that anime, and then returns to the user a zip file containing all the videos. I have gotten all the parts except navigating through youtube with python - it can be a little tricky! Watch for new updates. Made entirely with Python. Check out the repository <a href="https://github.com/markatron9000/AnimeOpsEnds">here</a>' 
+      bodee.innerHTML = 'This is a program which takes in the user\'s MyAnimeList username, scrapes their list of completed anime from their online page, keeps only those above a specified star limit (eventually), searches for a youtube video of the openings and endigns of that anime, and then returns to the user a zip file containing all the videos. Made entirely with Python. Check out the repository <a href="https://github.com/markatron9000/AnimeOpsEnds">here</a> or a video of it <a href="https://www.youtube.com/watch?v=KuB6_i6vvtI">here.</a>' 
       ;
       
     }
   else if(projectBoxCounter == 3){
-      heady.innerHTML = "Upcoming project: AI4All Portfolio";
-      dude.innerHTML = "Languages used: Python (with Scikit-learn, Pandas, Numpy), ???";
-      bodee.innerHTML = 'This semester, I am taking part in the AI4All program in addition to Google SPS and my regular classes. I will be desiging something that uses AI, but I have not quite gotten there yet! But in a few weeks, I will post the repository here.';
+      heady.innerHTML = "AI4All Portfolio";
+      dude.innerHTML = "Languages used: Python (with Scikit-learn and Numpy)";
+      bodee.innerHTML = 'During the Spring 2021 semester, I took part in the AI4All program in addition to Google SPS and my regular classes. I learned the basics of AI, and a its potential impact on humanity - especially when it comes to bias! See the repository <a href="https://github.com/markatron9000/AI4All_Projects">here</a>';
+      
+    }
+    else if(projectBoxCounter == 4){
+      heady.innerHTML = "Lets-Meet";
+      dude.innerHTML = "Languages used: Java (with servlets), Javascript, HTML, CSS";
+      bodee.innerHTML = 'For Google-SPS, in addition to making this website, I worked in a team of four students to create letsmeet.page, a website where each user in a group inputs their available time and location, and it returns the overlapping time and location for each of them. See the website <a href="https://letsmeet.page">here</a> or see the repository <a href="https://github.com/sps21-team21/lets-meet">here</a>';
+      
+    }
+    else if(projectBoxCounter == 5){
+      heady.innerHTML = "HRO-ML Health Site";
+      dude.innerHTML = "Languages used: HTML, CSS";
+      bodee.innerHTML = 'This was a website that I designed for a startup that I am interested in. It is the only site I have listed so far where I have started with a template, this one coming from bootstrapmade.com. See the website <a href="https://hroml.com">here</a>';
+      
+    }
+    else if(projectBoxCounter == 6){
+      heady.innerHTML = "NAND2Tetris";
+      dude.innerHTML = "Languages used: HDL, Hack assembly, Python";
+      bodee.innerHTML = 'TBA';
+      
+    }
+    else if(projectBoxCounter == 7){
+      heady.innerHTML = "Data Structures and Algorithms codes";
+      dude.innerHTML = "Languages used: C++";
+      bodee.innerHTML = 'For my data structures and algorithms class, we had to write our own verison of many famous data structures and algorithms, including a hashtable, djikstra\'s algorithm, and even a red-black tree! See the repository TBA';
       
     }
 }
@@ -54,7 +78,7 @@ function nextProj() {
 function prevProj(){
     projectBoxCounter-=2;
     if(projectBoxCounter== -2){
-        projectBoxCounter=2;
+        projectBoxCounter=7;
     }
     nextProj();
 }
