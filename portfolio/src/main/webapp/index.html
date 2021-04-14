@@ -5,15 +5,92 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="serverletscripts.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <h1>Mark's Portfolio</h1>
+      <p>Howdy!</p>
+      <p>My name is Mark Matis, and I am a Computer Science undergraduate student at Texas A&M University. I am also getting my Masters of Science in Finance at the same time. I love to read biographies, write poetry, and cook new foods. Welcome to my portfolio page!</p>
+      <p>
+        <br/>  
+        Here are a few projects that I have worked on outside of classwork:</p>
+      <hr>
+      <div id="projectBox">
+            <h2 id="headerProj">The Secret Identity Machine</h2>
+            <p id="bodyProj">My team and I created this project for our very first hackathon! It was a website which gave you the information for as many spoofed profiles as you wished to create. It gave fake addresses, fake images of people, phone numbers, fake names, and even gave each profile an email address that would automatcially recieve the "confirm profile" email - no need to set up an email for each account! It followed on the theme for the hackathon, "spy", as spies need to use fake identies all the time! Made with Python (with Flask library), html, and css. The website is not deployed anymore, but check out the repository <a href="https://github.com/robmadriaga/Extra_Secret">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=ttl-DLS5YmQ">here</a>
+                 </p>
+            <p  class="languagesClass" id="comeOn">Languages used: Python (with Flask library), HTML, CSS</p>
+        </div>
+        <br/>
+        <button class = "forward" onclick="nextProj()" style="float: right;">Next</button>
+        <button class = "backward" onclick="prevProj()">Previous</button>
+    <hr>
+    <!--  
+    <h2>Super Smash Bros Ultimate Optimizer</h2>
+      <p>For my second hackathon, I worked solo, and created an android app that, when told what character your opponent will be playing, tells you the best and worst matchups to counter it! Never pick the wrong character again! It was a little unpolished, but for only having 24 hours, I was very proud of it.  Due to the time constraint, I was unable to type all of the matchup lists into the respective character pages. I did get a decent amount of them finished though. Primarily made with Java and XML in Android Studio. Check out the repository <a href="https://github.com/markatron9000/SuperSmashBrosUltimateMatchupOptimizer">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=hdPSS6P1sLc">here</a></p>
+     
+        <hr>
+      <h2>The Secret Identity Machine</h2>
+      <p>My team and I created this project for our very first hackathon! It was a website which gave you the information for as many spoofed profiles as you wished to create. It gave fake addresses, fake images of people, phone numbers, fake names, and even gave each profile an email address that would automatcially recieve the "confirm profile" email - no need to set up an email for each account! It followed on the theme for the hackathon, "spy", as spies need to use fake identies all the time! Made with Python (with Flask library), html, and css. The website is not deployed anymore, but check out the repository <a href="https://github.com/robmadriaga/Extra_Secret">here</a> or watch a video of it <a href="https://www.youtube.com/watch?v=ttl-DLS5YmQ">here</a></p>
+       <hr>
+      <h2>Anime Openings & Endings Downloader</h2>
+      <p>This one is still a work in progress, but essentially, it is a program which takes in the user's MyAnimeList username, scrapes their list of completed anime from their online page, keeps only those above a specified star limit, searches for a youtube video of the openings and endigns of that anime, and then returns to the user a zip file containing all the videos. I have gotten all the parts except navigating through youtube with python - it can be a little tricky! Watch for new updates. Made entirely with Python. Check out the repository <a href="https://github.com/markatron9000/AnimeOpsEnds">here</a> </p>
+      <hr>
+      <h2>Upcoming project: AI4All Portfolio</h2>
+      <p>This semester, I am taking part in the AI4All program in addition to Google SPS and my regular classes. I will be desiging something that uses AI, but I have not quite gotten there yet! But in a few weeks, I will post the repository here.</p>
+    
+      <hr>
+      -->
+      <!--
+      <p><br/>If you want a would like to play a little game I made in javascript (primarily with PixiJS library), <a href="game.html" class="buttonAppear">Press Me!</a></p>
+      -->
+      <p><br/>If you would like to add your footprint to this website in the form of a song suggestion to all who visit it, or want to see the suggestions of others, <a href="musiccom.html" class="buttonAppear"><Strong>Click Here!</Strong></a></p>
+      <p><br/>Here, have a picture of me!</p>
+      <img src="images/memeetinglonghorn_smaller.jpeg"/>
+      <p>Have a picture of Floyd!</p>
+      <img src="images/Floydwithhat_smaller_3.jpg"
+      <p>
+        <br/>
+        <br/>
+        Take a gif even!</p>
+      <img src="/images/whisperoftheheartgif.gif" />
+      
+      <p>And now, some links:</p>  
+      <a href="https://www.instagram.com/markusillian/">Follow me on Insta!</a>
+      <p></p>
+      <a href="https://www.linkedin.com/in/mark-matis-2023/">Follow me on LinkedIn!</a>
+      <p></p>
+      <a href="https://github.com/markatron9000">Check out my Github!</a>
+      <p></p>      
+      <a href="https://www.quantconnect.com/u/markatron9000">Check out my QuantConnect!</a>
+      <p></p> 
+      <a href="/Documents/throwawayresume3.pdf">If you would like a pdf of my resume, just click here!</a>
+      <p></p>
+        <br/>
+      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      -->
+
+    <form action="/form-handler" method="POST" onSubmit="alert('Thank you for your message!');">
+    <p>Have feedback on the website? Need to vent about your day? Want to give me your contact info? Whatever it may be, just enter it below and I will read it!</p>
+    <textarea name="text-input"></textarea>
+    <br/>
+    <input type="submit"/>
+    <!-- <input onclick="thanksAlert()" type="submit"/> -->
+    </form>
+ </br>
+      <hr>
+        <h2>Click here to get a random tidbit:</h2>
+      <button class = "firstbuttonclass" onclick="getListOfQuotes()">Quote Me</button>
       <div id="greeting-container"></div>
+    </br>
+    <!--
+    <hr>
+    <hr>
+      <p>In development</p>
+    <button onclick="showHardcodedString()">Hardcoded Text?</button>
+    <p id="forServlet"></p>
+    -->  
     </div>
   </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Community Ear</title>
+        <link rel="stylesheet" href="stylemusiccom.css">
+        <script src="serverletscripts.js"></script>
+        <script src="script.js"></script>
+        <script src="scriptgame.js"></script>
+    </head>
+    <body>
+        <script>
+            window.onload = getTableOfMusic();
+        </script>
+        <div id="musicinput">
+        </br>
+            <form action="/mslist" method="POST" onSubmit="alert('Song will be added to community list!');">
+            <p id="bruh">Want to leave your footprint on this site? How about adding your favorite song for all those who visit this page to see?</p>
+        </br>
+            <textarea name="text-input" rows="2" columns = "210"></textarea>
+        </br>
+            <input type="submit"/>
+            </form>
+        </div>
+    </br>
+        <div id="tabl">Suggestions currently loading! If a few seconds have passed, and they still haven't loaded, please reload the page!</div>
+        <!--<script>getTableOfMusic();</script>-->
+</br>
+        <button class = "buttonclass" onclick="lastPage()">Back to Resume Website</button>
+    </body>
+</html>
