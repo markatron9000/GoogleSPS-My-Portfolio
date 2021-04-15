@@ -51,7 +51,7 @@ function nextProj() {
     }
     else if(projectBoxCounter == 4){
       heady.innerHTML = "Lets-Meet";
-      dude.innerHTML = "Languages used: Java (with servlets), Javascript, HTML, CSS";
+      dude.innerHTML = "Languages used: Java (with servlets), Javascript, HTML, CSS, Apache Maven";
       bodee.innerHTML = 'For Google-SPS, in addition to making this website, I worked in a team of four students to create letsmeet.page, a website where each user in a group inputs their available time and location, and it returns the overlapping time and location for each of them. See the website <a href="https://letsmeet.page">here</a> or see the repository <a href="https://github.com/sps21-team21/lets-meet">here</a>';
       
     }
@@ -63,7 +63,7 @@ function nextProj() {
     }
     else if(projectBoxCounter == 6){
       heady.innerHTML = "NAND2Tetris";
-      dude.innerHTML = "Languages used: HDL, Hack assembly, Python";
+      dude.innerHTML = "Languages used: HDL, Hack assembly, C++";
       bodee.innerHTML = 'TBA';
       
     }
@@ -76,9 +76,9 @@ function nextProj() {
 }
 
 function prevProj(){
-    projectBoxCounter-=2;
+    projectBoxCounter -= 2;
     if(projectBoxCounter== -2){
-        projectBoxCounter=7;
+        projectBoxCounter = 6;
     }
     nextProj();
 }
