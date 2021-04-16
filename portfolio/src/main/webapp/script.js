@@ -12,13 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
+//**** constants ****//
+TOTAL_PROJECTS = 7;
+
+
 var projectBoxCounter = 0;
 function nextProj() {
   var heady = document.getElementById("headerProj");
   var bodee = document.getElementById("bodyProj");
   var dude = document.getElementById("comeOn");
   projectBoxCounter += 1;
-  if (projectBoxCounter > 7) {
+  //if greater than total projects, then wrap around to first project
+  if (projectBoxCounter > TOTAL_PROJECTS) {
     projectBoxCounter = 0;
   } 
 
@@ -76,9 +82,11 @@ function nextProj() {
 }
 
 function prevProj(){
+    //subtract by 2, because it will be incremented by one when nextProj() is called.
     projectBoxCounter -= 2;
     if(projectBoxCounter== -2){
-        projectBoxCounter = 6;
+        //we set it to (total-1), becuase it will be incremented by 1 when nextProj() is called.
+        projectBoxCounter = TOTAL_PROJECTS - 1;
     }
     nextProj();
 }
